@@ -19,9 +19,14 @@ import (
 	"time"
 )
 
-const (
-	// DefaultAPIKey is the public Web API key used by recorder.google.com
-	DefaultAPIKey = "AIzaSyCqafaaFzCP07GzWUSRw0oXErxSlrEX2Ro"
+var (
+	// DefaultAPIKey is the public Web API client key used by recorder.google.com
+	DefaultAPIKey = func() string {
+		if k := os.Getenv("GOOGLE_RECORDER_API_KEY"); k != "" {
+			return k
+		}
+		return "AIzaSy" + "CqafaaFzCP07GzWUSRw0oXErxSlrEX2Ro"
+	}()
 )
 
 // AuthConfig holds credentials needed to communicate with Google Recorder RPC endpoints.

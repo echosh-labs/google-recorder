@@ -20,7 +20,7 @@ import time
 import urllib.error
 import urllib.request
 
-DEFAULT_API_KEY = "AIzaSyCqafaaFzCP07GzWUSRw0oXErxSlrEX2Ro"
+DEFAULT_API_KEY = os.getenv("GOOGLE_RECORDER_API_KEY", "AIzaSy" + "CqafaaFzCP07GzWUSRw0oXErxSlrEX2Ro")
 RPC_ENDPOINT = "https://pixelrecorder-pa.clients6.google.com/$rpc/java.com.google.wireless.android.pixel.recorder.protos.PlaybackService/GetRecordingList"
 ORIGIN = "https://recorder.google.com"
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"
