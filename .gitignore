@@ -1,4 +1,23 @@
-node_modules/
-dist/
-*.tsbuildinfo
+# Go build artifacts
+backend/bin/
+backend/*.exe
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Environment / Local credentials
+*.local
+.env
+auth.json
+
+# OS & Editor files
 .DS_Store
+*.log
+__pycache__/
+*.pyc
+
+# Local recordings downloads
+recordings/
+
