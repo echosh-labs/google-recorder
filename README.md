@@ -139,4 +139,9 @@ google-recorder/
 ---
 
 ## 📄 License
-Dual-licensed under the AGPL-3.0 and commercial enterprise licensing from [echoSH labs](https://echosh-labs.com).
+
+This software is dual-licensed:
+- **Open Source Edition**: Governed by the [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE.md) for individual, educational, and open-source usage.
+- **Commercial & Enterprise Edition**: Requires a commercial license from echoSH labs for proprietary integration, corporate deployment, or advanced enterprise features. See [COMMERCIAL.md](COMMERCIAL.md) or visit [echosh-labs.com](https://echosh-labs.com).
+
+For commercial licensing inquiries, contact [justin@echosh-labs.com](mailto:justin@echosh-labs.com).
